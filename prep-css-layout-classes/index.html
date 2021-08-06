@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .container {
+      max-width: 992px;
+      margin: auto;
+      justify-content: center;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+    }
+
+    .column {
+      flex-basis: calc(100% / 3);
+      padding-right: 8px;
+      padding-left: 8px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Complete the HTML here -->
+<div class="container">
+  <h1>Indiana Jones</h1>
+  <div class="row">
+
+    <div class="column">
+      <img src="images/crusade.jpg">
+      <h3>The Last Crusade</h3>
+      <p>Indiana Jones is some kind of archaeologist</p>
+    </div>
+
+    <div class="column">
+      <img src="images/raiders.jpg">
+      <h3>Raiders of the Lost Ark</h3>
+      <p>I think this one has something about him fighting Nazis</p>
+    </div>
+
+    <div class="column">
+      <img src="images/temple.jpg">
+      <h3>The Temple of Doom</h3>
+      <p>No idea. Tomb Raider is more my thing.</p>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
